@@ -8,6 +8,14 @@ chrome://flags/#pdf-form-save
 
 chrome://flags/#username-first-flow
 
-# Alt+tab by window instead of application in Mac
+# Apps
+- Copyclip for clipboard history
+- Brew for packages
+- Rectangle for window snapping
+- Itsycal for a calendar dropdown in menu bar
+
+# Deprecated
 https://bahoom.com/hyperswitch
 - Enable cross-window and cross-screen on first settings pane
+- Alt+tab by window instead of application in Mac
+- Not cross-window, orders of windows messed up
