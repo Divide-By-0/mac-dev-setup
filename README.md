@@ -14,6 +14,11 @@ chrome://flags/#username-first-flow
 - Rectangle for window snapping
 - Itsycal for a calendar dropdown in menu bar
 
+# Settings
+$ sudo chmod 666 /etc/ssh/sshd_config
+$ vim /etc/ssh/sshd_config
+  > CountAliveInterval 120
+
 # Deprecated
 https://bahoom.com/hyperswitch
 - Enable cross-window and cross-screen on first settings pane
