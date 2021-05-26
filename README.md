@@ -12,7 +12,7 @@ chrome://flags/#username-first-flow
 - Copyclip for clipboard history
 - Brew for packages
 - Rectangle for window snapping
-- Itsycal for a calendar dropdown in menu bar
+- Itsycal for a calendar dropdown in menu bar (add to startup https://macpaw.com/how-to/remove-startup-items-in-osx)
 
 # Settings
 ```
