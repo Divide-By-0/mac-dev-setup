@@ -19,6 +19,7 @@ chrome://flags/#username-first-flow
 $ sudo chmod 666 /etc/ssh/sshd_config
 $ vim /etc/ssh/sshd_config
   > CountAliveInterval 120
+$ echo "set -s escape-time 0" > ~/.tmux.conf # Makes escape zero delay
 ```
 # Deprecated
 https://bahoom.com/hyperswitch
