@@ -20,6 +20,9 @@ $ sudo chmod 666 /etc/ssh/sshd_config
 $ vim /etc/ssh/sshd_config
   > CountAliveInterval 120
 $ echo "set -s escape-time 0" > ~/.tmux.conf # Makes escape zero delay
+# vim ~/.vimrc
+  filetype plugin on
+  syntax on
 ```
 # Deprecated
 https://bahoom.com/hyperswitch
