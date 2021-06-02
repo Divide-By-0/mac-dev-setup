@@ -20,9 +20,9 @@ $ sudo chmod 666 /etc/ssh/sshd_config
 $ vim /etc/ssh/sshd_config
   > CountAliveInterval 120
 $ echo "set -s escape-time 0" > ~/.tmux.conf # Makes escape zero delay
-# vim ~/.vimrc
-  filetype plugin on
-  syntax on
+# echo $'filetype plugin on\nsyntax on' > ~/.vimrc
+# echo $'"\\e[A": history-search-backward\n"\\e[B": history-search-forward' > ~/.inputrc
+# bind -f ~/.inputrc
 ```
 # Deprecated
 https://bahoom.com/hyperswitch
