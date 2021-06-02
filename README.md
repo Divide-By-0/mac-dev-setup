@@ -20,6 +20,7 @@ sudo chmod 666 /etc/ssh/sshd_config
 vim /etc/ssh/sshd_config # Replace this by mosh
   > CountAliveInterval 120
 echo "set -s escape-time 0" > ~/.tmux.conf # Makes escape zero delay
+tmux source-file ~/.tmux.conf # If in tmux
 echo $'filetype plugin on\nsyntax on' > ~/.vimrc
 echo $'"\\e[A": history-search-backward\n"\\e[B": history-search-forward' > ~/.inputrc
 bind -f ~/.inputrc
