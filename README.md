@@ -19,7 +19,7 @@ chrome://flags/#username-first-flow
 sudo chmod 666 /etc/ssh/sshd_config
 vim /etc/ssh/sshd_config # Replace this by mosh
   > CountAliveInterval 120
-echo $'set -s escape-time 0\nset-option -g default-shell \/bin\/bash\r\nunbind Up     \r\nunbind Down   \r\nunbind Right   \r\nunbind Left  \r\nbind Up run-shell \"if [ $(tmux display-message -p '#{pane_at_top}') -ne 1 ]; then tmux select-pane -U; fi\"\r\nbind Down run-shell \"if [ $(tmux display-message -p '#{pane_at_bottom}') -ne 1 ] ; then tmux select-pane -D; fi\"\r\nbind Right run-shell \"if [ $(tmux display-message -p '#{pane_at_right}') -ne 1 ]; then tmux select-pane -R; fi\"\r\nbind Left run-shell \"if [ $(tmux display-message -p '#{pane_at_left}') -ne 1 ]; then tmux select-pane -L; fi\"' > ~/.tmux.conf # Makes escape zero delay and has 'ctrl b + arrow' end at an edge pane
+echo $'set -s escape-time 0\nset-option -g default-shell /bin/bash\nunbind Up     \nunbind Down   \nunbind Right   \nunbind Left  \nbind Up run-shell "if [ $(tmux display-message -p \'#{pane_at_top}\') -ne 1 ]; then tmux select-pane -U; fi"\nbind Down run-shell "if [ $(tmux display-message -p \'#{pane_at_bottom}\') -ne 1 ] ; then tmux select-pane -D; fi"\nbind Right run-shell "if [ $(tmux display-message -p \'#{pane_at_right}\') -ne 1 ]; then tmux select-pane -R; fi"\nbind Left run-shell "if [ $(tmux display-message -p \'#{pane_at_left}\') -ne 1 ]; then tmux select-pane -L; fi"' > ~/.tmux.conf # Makes escape zero delay and has 'ctrl b + arrow' end at an edge pane
 tmux source-file ~/.tmux.conf # If in tmux
 echo $'filetype plugin indent on\nfiletype plugin on\nsyntax on\n:inoremap jj <Esc>\n' > ~/.vimrc
 echo $'"\\e[A": history-search-backward\n"\\e[B": history-search-forward' > ~/.inputrc
