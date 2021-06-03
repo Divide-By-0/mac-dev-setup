@@ -1,5 +1,5 @@
 # mac-dev-setup
-Things I setup on my laptop
+Things I setup on my laptop. Insipred by https://github.com/utkuufuk/ubuntu-on-steroids.
 
 # Enable these flags to name windows, fill PDF forms, and save passwords with two phase login
 chrome://flags/#window-naming
