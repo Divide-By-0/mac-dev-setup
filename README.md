@@ -31,12 +31,12 @@ bind -f ~/.inputrc
 
 # Mac Only
 ```
-echo $'test "$(ps -ocommand= -p $PPID | awk \'{print $1}\')" == \'script\' || (script -F $HOME/bash_histories_with_outputs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)' >> ~/.tmux.conf
+echo $'test "$(ps -ocommand= -p $PPID | awk \'{print $1}\')" == \'script\' || (script -F $HOME/bash_histories_with_outputs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)' >> ~/.bashrc
 ```
 
 # Ubuntu Only
 ```
-echo $'test "$(ps -ocommand= -p $PPID | awk \'{print $1}\')" == \'script\' || (script -f $HOME/bash_histories_with_outputs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)' >> ~/.tmux.conf
+echo $'test "$(ps -ocommand= -p $PPID | awk \'{print $1}\')" == \'script\' || (script -f $HOME/bash_histories_with_outputs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)' >> ~/.bashrc
 ```
 
 # Deprecated
