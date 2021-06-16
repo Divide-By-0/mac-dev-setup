@@ -28,6 +28,17 @@ echo $'filetype plugin indent on\nfiletype plugin on\nsyntax on\n:inoremap jj <E
 echo $'"\\e[A": history-search-backward\n"\\e[B": history-search-forward' > ~/.inputrc
 bind -f ~/.inputrc
 ```
+
+# Mac Only
+```
+echo $'test "$(ps -ocommand= -p $PPID | awk \'{print $1}\')" == \'script\' || (script -F $HOME/bash_histories_with_outputs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)' >> ~/.tmux.conf
+```
+
+# Ubuntu Only
+```
+echo $'test "$(ps -ocommand= -p $PPID | awk \'{print $1}\')" == \'script\' || (script -f $HOME/bash_histories_with_outputs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)' >> ~/.tmux.conf
+```
+
 # Deprecated
 https://bahoom.com/hyperswitch
 - Enable cross-window and cross-screen on first settings pane
