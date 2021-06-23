@@ -46,7 +46,11 @@ gsettings set org.gnome.desktop.interface clock-format 12h # 12 hour time
 ```
 
 # Canonical tmux.conf
- ```
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+```
 set -s escape-time 0
 set-option -g default-shell /bin/bash
 unbind Up
