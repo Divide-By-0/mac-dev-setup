@@ -45,6 +45,33 @@ source ~/.bashrc
 gsettings set org.gnome.desktop.interface clock-format 12h # 12 hour time
 ```
 
+# Canonical tmux.conf
+ ```
+set -s escape-time 0
+set-option -g default-shell /bin/bash
+unbind Up
+unbind Down
+unbind Right
+unbind Left
+bind Up run-shell "if [ $(tmux display-message -p '#{pane_at_top}') -ne 1 ]; then tmux select-pane -U; fi"
+bind Down run-shell "if [ $(tmux display-message -p '#{pane_at_bottom}') -ne 1 ] ; then tmux select-pane -D; fi"
+bind Right run-shell "if [ $(tmux display-message -p '#{pane_at_right}') -ne 1 ]; then tmux select-pane -R; fi"
+bind Left run-shell "if [ $(tmux display-message -p '#{pane_at_left}') -ne 1 ]; then tmux select-pane -L; fi"
+# List of plugins
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'git@github.com:user/plugin'
+# set -g @plugin 'git@bitbucket.com:user/plugin'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
+```
+
 # Deprecated
 https://bahoom.com/hyperswitch
 - Enable cross-window and cross-screen on first settings pane
