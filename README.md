@@ -43,6 +43,7 @@ mkdir ~/bash_histories_with_outputs
 echo $'test "$(ps -ocommand= -p $PPID | awk \'{print $1}\')" == \'script\' || (script -f $HOME/bash_histories_with_outputs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)' >> ~/.bashrc
 source ~/.bashrc
 gsettings set org.gnome.desktop.interface clock-format 12h # 12 hour time
+chmod 777 ~/.bash_history # To pesist history
 ```
 
 # Canonical tmux.conf
