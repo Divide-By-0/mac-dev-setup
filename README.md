@@ -27,6 +27,8 @@ tmux source-file ~/.tmux.conf # If in tmux
 echo $'filetype plugin indent on\nfiletype plugin on\nsyntax on\n:inoremap jj <Esc>\n' > ~/.vimrc
 echo $'"\\e[A": history-search-backward\n"\\e[B": history-search-forward' > ~/.inputrc
 bind -f ~/.inputrc
+echo $'HISTSIZE=20000\nHISTFILESIZE=20000' > ~/.bashrc # More history in bashrc
+source ~/.bashrc
 ```
 
 # Mac Only
