@@ -1,5 +1,6 @@
 # mac-dev-setup
 Things I setup on my laptop. Insipred by https://github.com/utkuufuk/ubuntu-on-steroids.
+Soon-to-be deprecated and merged with https://github.com/Divide-By-0/dotfiles.
 
 # Enable these flags to name windows, fill PDF forms, and save passwords with two phase login
 chrome://flags/#window-naming
@@ -79,8 +80,13 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 run '~/.tmux/plugins/tpm/tpm'
 ```
 
+# Other
+Staples Wrist Rest + Fabric Tape + (Microsoft Sculpt -> ErgoDox EZ Keyboard)
+
 # Deprecated
 https://bahoom.com/hyperswitch
 - Enable cross-window and cross-screen on first settings pane
 - Alt+tab by window instead of application in Mac
 - Not cross-window, orders of windows messed up
+
+
