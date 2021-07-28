@@ -47,7 +47,12 @@ echo $'test "$(ps -ocommand= -p $PPID | awk \'{print $1}\')" == \'script\' || (s
 source ~/.bashrc
 gsettings set org.gnome.desktop.interface clock-format 12h # 12 hour time
 chmod 777 ~/.bash_history # To pesist history
+``` 
+
+``` 
+sudo apt install libusb-dev # Ergodex EZ https://github.com/zsa/wally/wiki/Linux-install
 ```
+
 
 # Canonical tmux.conf
 ```
