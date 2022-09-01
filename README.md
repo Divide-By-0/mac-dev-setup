@@ -26,15 +26,19 @@ echo "set-option -g history-limit 5000" >> ~/.tmux.conf # Increase tmux scrollba
 echo "set -g @plugin 'tmux-plugins/tmux-resurrect'" >> ~/.tmux.conf 
 echo "set -g @plugin 'tmux-plugins/tmux-continuum'" >> ~/.tmux.conf  # Allows tmuxes to autosave every 15 min and resurrect on a system restart, persisting them
 tmux source-file ~/.tmux.conf # If in tmux
-echo $'filetype plugin indent on\nfiletype plugin on\nsyntax on\n:inoremap jj <Esc>\n' > ~/.vimrc
-echo $'"\\e[A": history-search-backward\n"\\e[B": history-search-forward' > ~/.inputrc
-bind -f ~/.inputrc
 echo $'HISTSIZE=20000\nHISTFILESIZE=20000' > ~/.bashrc # More history in bashrc
 source ~/.bashrc
+echo $'filetype plugin indent on\nfiletype plugin on\nsyntax on\n:inoremap jj <Esc>\n' > ~/.vimrc
+echo $'"\\e[A": history-search-backward\n"\\e[B": history-search-forward\nset completion-ignore-case on' > ~/.inputrc
+echo $'bind -f ~/.inputrc' > ~/.bash_profile
+bind -f ~/.inputrc
 ```
 
 # Mac Only
 ```
+brew install readline # Allows parsing of inputrc
+brew link --force readline # Visible to bash
+
 mkdir ~/bash_histories_with_outputs
 echo $'test "$(ps -ocommand= -p $PPID | awk \'{print $1}\')" = \'script\' || (script -F $HOME/bash_histories_with_outputs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)' >> ~/.bashrc
 source ~/.bashrc
