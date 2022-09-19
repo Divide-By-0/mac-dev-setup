@@ -40,8 +40,8 @@ bind -f ~/.inputrc
 brew install readline # Allows parsing of inputrc
 brew link --force readline # Visible to bash
 
-# defaults write -g InitialKeyRepeat -int 4 # normal minimum is 15 (225 ms)
-# defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30 ms)
+# defaults write -g InitialKeyRepeat -int 8 # normal minimum is 15 (225 ms)
+# defaults write -g KeyRepeat -int 4 # normal minimum is 2 (30 ms)
 
 mkdir ~/bash_histories_with_outputs
 echo $'test "$(ps -ocommand= -p $PPID | awk \'{print $1}\')" = \'script\' || (script -F $HOME/bash_histories_with_outputs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)' >> ~/.bashrc
