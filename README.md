@@ -15,7 +15,7 @@ chrome://flags/#username-first-flow
 - Rectangle for window snapping
 - Itsycal for a calendar dropdown in menu bar (add to startup https://macpaw.com/how-to/remove-startup-items-in-osx)
 - `brew install --cask discord slack remnote messenger vlc karabiner-elements transmission protonvpn mathpix-snipping-tool rectangle copyclip itsycal twitch-studio sonic-pi`
-- `brew install wget youtube-dl ffmpeg`
+- `brew install wget youtube-dl ffmpeg fd`
 
 # Settings
 ```
