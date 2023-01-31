@@ -29,9 +29,12 @@ zle -N zle-keymap-select
 HISTFILE=~/.zsh_history
 HISTSIZE=100000000
 SAVEHIST=100000000
+HISTFILESIZE=100000000 # More history in bashrc
 setopt INC_APPEND_HISTORY
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_DUPS
+HISTFILE=~/.zsh_history
+test "$(ps -ocommand= -p $PPID | awk '{print $1}')" = 'script' || (script -F $HOME/bash_histories_with_outputs/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)
 
 #### COLORS
 alias ll='ls -al'
