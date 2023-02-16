@@ -1,6 +1,6 @@
 # mac-dev-setup
 Things I setup on my laptop. Insipred by https://github.com/utkuufuk/ubuntu-on-steroids.
-Soon-to-be deprecated and merged with https://github.com/Divide-By-0/dotfiles.
+If you want the vim-specific version, try https://github.com/Divide-By-0/dotfiles.
 
 # Enable these flags to name windows, fill PDF forms, and save passwords with two phase login
 chrome://flags/#window-naming
