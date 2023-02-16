@@ -44,3 +44,49 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 autoload -U colors && colors
 PS1="%{$fg[green]%}%n@%m%{$reset_color%}:%{$fg[cyan]%}%1~%{$reset_color%} %% "
+
+### Git Archive and Unarchive
+alias git-archive='
+    # Check that a branch name was provided
+    if [ -z "$1" ]; then
+        echo "Please provide the name of the branch to archive"
+        return 1
+    fi
+
+    # Get the current branch
+    current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+    # Create a tag for the branch
+    tag="archive/$1-$(date +%Y%m%d%H%M%S)"
+    git tag "$tag" "$1"
+
+    # Delete the branch from local and origin
+    git branch -D "$1"
+    git push origin ":$1"
+
+    # Checkout the current branch
+    git checkout "$current_branch"
+'
+
+alias git-unarchive='
+    # Check that a branch name was provided
+    if [ -z "$1" ]; then
+        echo "Please provide the name of the branch to unarchive"
+        return 1
+    fi
+
+    # Check that the branch exists as a tag
+    tag="archive/$1-*"
+    if ! git rev-parse "$tag" >/dev/null 2>&1; then
+        echo "No archive tag found for branch '$1'"
+        return 1
+    fi
+
+    # Restore the branch from the tag and push to origin
+    git checkout -b "$1" "$tag"
+    git push -u origin "$1"
+
+    # Delete the archive tag
+    git tag -d "$tag"
+    git push origin ":$tag"
+'
