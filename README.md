@@ -101,7 +101,8 @@ run '~/.tmux/plugins/tpm/tpm'
 ```
 
 # Other
-Staples Wrist Rest + Fabric Tape + (Microsoft Sculpt -> ErgoDox EZ Keyboard)
+Staples Wrist Rest
+Add [this block list for Twitter ads](https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt) to your Chrome uBlock origin
 
 # Deprecated
 https://bahoom.com/hyperswitch
