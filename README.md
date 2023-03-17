@@ -1,10 +1,10 @@
 # mac-dev-setup
-Things I setup on my Mac laptop -- it should work on Ubuntu as well. Insipred by https://github.com/utkuufuk/ubuntu-on-steroids.
+Things I setup on my Mac laptop -- it should work on Ubuntu as well. Insipred by https://github.com/utkuufuk/ubuntu-on-steroids. </br>
 If you want the vim-specific version, try https://github.com/Divide-By-0/dotfiles.
 
 # Enable these flags to name windows, fill PDF forms, and save passwords with two phase login
-chrome://flags/#window-naming
-chrome://flags/#pdf-form-save
+chrome://flags/#window-naming </br>
+chrome://flags/#pdf-form-save </br>
 chrome://flags/#username-first-flow
 
 # Force high quality audio on bluetooth headphones
