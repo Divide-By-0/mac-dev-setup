@@ -7,9 +7,6 @@ chrome://flags/#window-naming </br>
 chrome://flags/#pdf-form-save </br>
 chrome://flags/#username-first-flow
 
-# Force high quality audio on bluetooth headphones
-Follow these instructions to ensure that your bluetooth audio stays high quality when a mic is connected: https://gist.github.com/dvf/3771e58085568559c429d05ccc339219
-
 # Apps
 - Copyclip for clipboard history
 - Brew for packages
@@ -109,6 +106,9 @@ run '~/.tmux/plugins/tpm/tpm'
 # Other
 Staples Wrist Rest
 Add [this block list for Twitter ads](https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt) to your Chrome uBlock origin
+
+### Force high quality audio on bluetooth headphones
+This doesn't seem to work anymore. At one point, these might have kept the audio high quality when a mic was connected: https://gist.github.com/dvf/3771e58085568559c429d05ccc339219
 
 # Deprecated
 https://bahoom.com/hyperswitch
