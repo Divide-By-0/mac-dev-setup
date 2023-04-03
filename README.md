@@ -20,9 +20,6 @@ Follow these instructions to ensure that your bluetooth audio stays high quality
 
 # Settings
 ```
-sudo chmod 666 /etc/ssh/sshd_config
-vim /etc/ssh/sshd_config # Replace this by mosh
-  > CountAliveInterval 120
 echo $'set -s escape-time 0\nset-option -g default-shell /bin/bash\nunbind Up     \nunbind Down   \nunbind Right   \nunbind Left  \nbind Up run-shell "if [ $(tmux display-message -p \'#{pane_at_top}\') -ne 1 ]; then tmux select-pane -U; fi"\nbind Down run-shell "if [ $(tmux display-message -p \'#{pane_at_bottom}\') -ne 1 ] ; then tmux select-pane -D; fi"\nbind Right run-shell "if [ $(tmux display-message -p \'#{pane_at_right}\') -ne 1 ]; then tmux select-pane -R; fi"\nbind Left run-shell "if [ $(tmux display-message -p \'#{pane_at_left}\') -ne 1 ]; then tmux select-pane -L; fi"' > ~/.tmux.conf # Makes escape zero delay and has 'ctrl b + arrow' end at an edge pane
 echo "set-option -g history-limit 5000" >> ~/.tmux.conf # Increase tmux scrollback buffer size
 echo "set -g @plugin 'tmux-plugins/tmux-resurrect'" >> ~/.tmux.conf 
@@ -34,6 +31,14 @@ echo $'filetype plugin indent on\nfiletype plugin on\nsyntax on\n:inoremap jj <E
 echo $'"\\e[A": history-search-backward\n"\\e[B": history-search-forward\nset completion-ignore-case on' > ~/.inputrc
 echo $'bind -f ~/.inputrc' > ~/.bash_profile
 bind -f ~/.inputrc
+sudo chmod 666 /etc/ssh/sshd_config
+```
+
+Then, manually edit your vim configs to keep SSH configs alive.
+
+```
+vim /etc/ssh/sshd_config # Replace this by mosh?
+  > CountAliveInterval 120
 ```
 
 # Mac Only
