@@ -18,6 +18,7 @@ chrome://flags/#username-first-flow
 # Settings
 ```
 echo $'set -s escape-time 0\nset-option -g default-shell /bin/bash\nunbind Up     \nunbind Down   \nunbind Right   \nunbind Left  \nbind Up run-shell "if [ $(tmux display-message -p \'#{pane_at_top}\') -ne 1 ]; then tmux select-pane -U; fi"\nbind Down run-shell "if [ $(tmux display-message -p \'#{pane_at_bottom}\') -ne 1 ] ; then tmux select-pane -D; fi"\nbind Right run-shell "if [ $(tmux display-message -p \'#{pane_at_right}\') -ne 1 ]; then tmux select-pane -R; fi"\nbind Left run-shell "if [ $(tmux display-message -p \'#{pane_at_left}\') -ne 1 ]; then tmux select-pane -L; fi"' > ~/.tmux.conf # Makes escape zero delay and has 'ctrl b + arrow' end at an edge pane
+echo 'setw -g aggressive-resize on' >>~/.tmux.conf
 echo "set-option -g history-limit 5000" >> ~/.tmux.conf # Increase tmux scrollback buffer size
 echo "set -g @plugin 'tmux-plugins/tmux-resurrect'" >> ~/.tmux.conf 
 echo "set -g @plugin 'tmux-plugins/tmux-continuum'" >> ~/.tmux.conf  # Allows tmuxes to autosave every 15 min and resurrect on a system restart, persisting them
