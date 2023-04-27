@@ -8,7 +8,8 @@ chrome://flags/#pdf-form-save </br>
 chrome://flags/#username-first-flow
 
 # Apps
-- Copyclip for clipboard history
+- Copyclip 1 for clipboard history
+- [Typio Reboot](https://github.com/tsukumijima/typio-form-recovery-reboot/releases/tag/v3.3.0) to save form history in Chrome 
 - Brew for packages
 - Rectangle for window snapping
 - Itsycal for a calendar dropdown in menu bar (add to startup https://macpaw.com/how-to/remove-startup-items-in-osx)
