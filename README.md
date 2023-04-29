@@ -9,12 +9,21 @@ chrome://flags/#username-first-flow
 
 # Apps
 - Copyclip 1 for clipboard history
-- [Typio Reboot](https://github.com/tsukumijima/typio-form-recovery-reboot/releases/tag/v3.3.0) to save form history in Chrome 
 - Brew for packages
 - Rectangle for window snapping
 - Itsycal for a calendar dropdown in menu bar (add to startup https://macpaw.com/how-to/remove-startup-items-in-osx)
 - `brew install --cask discord slack remnote messenger vlc karabiner-elements transmission protonvpn mathpix-snipping-tool rectangle copyclip itsycal twitch-studio sonic-pi sreamlabs-obs`
 - `brew install wget youtube-dl ffmpeg fd`
+
+# Chrome Extensions
+- [Typio Reboot](https://github.com/tsukumijima/typio-form-recovery-reboot/releases/tag/v3.3.0) to save form history in Chrome 
+- [Tempus: Timed Youtube Comments](https://chrome.google.com/webstore/detail/tempus/bpdhbpeecmmglmkjfmigehaebpndmceh)
+- [Bypass Paywalls Chrome Clean](https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean)
+- [Get Off Those Sites](https://github.com/grimsteel/get-off-those-sites): You predict the expected time on your site and it'll turn it black and white after that time, and also log the actual amount of time that you spend on that site.
+- [Privacy.com](https://app.privacy.com/join/QCDWQ): Virtual prepaid credit cards with max spend; useful for subscriptions.
+- Tactiq: Takes automatic transcripts of any Google Meet or Zoom meeting in browser along with AI actionables and summaries.
+- ShareGPT: Share your ChatGPT conversations.
+- Bitwarden Password Manager
 
 # Settings
 ```
