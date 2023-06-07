@@ -12,7 +12,8 @@ chrome://flags/#username-first-flow
 - Brew for packages
 - Rectangle for window snapping
 - Itsycal for a calendar dropdown in menu bar (add to startup https://macpaw.com/how-to/remove-startup-items-in-osx)
-- `brew install --cask discord slack remnote messenger vlc karabiner-elements transmission protonvpn mathpix-snipping-tool rectangle copyclip itsycal twitch-studio sonic-pi sreamlabs-obs`
+- `brew install --cask discord slack remnote messenger vlc karabiner-elements transmission protonvpn mathpix-snipping-tool rectangle copyclip itsycal twitch-studio sonic-pi sreamlabs-obs trash`
+  - `trash` lets you rm to Mac trash via command line
 - `brew install wget youtube-dl ffmpeg fd`
 
 # Chrome Extensions
@@ -115,7 +116,7 @@ run '~/.tmux/plugins/tpm/tpm'
 ```
 
 # Other
-Install [this script](https://gist.github.com/dabrahams/14fedc316441c350b382528ea64bc09c) in bin to trash to Recycle Bin via the command line on Mac.
+
 
 Staples Wrist Rest
 Add [this block list for Twitter ads](https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt) to your Chrome uBlock origin
