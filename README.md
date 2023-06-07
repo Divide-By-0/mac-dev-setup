@@ -115,6 +115,8 @@ run '~/.tmux/plugins/tpm/tpm'
 ```
 
 # Other
+Install [this script](https://gist.github.com/dabrahams/14fedc316441c350b382528ea64bc09c) in bin to trash to Recycle Bin via the command line on Mac.
+
 Staples Wrist Rest
 Add [this block list for Twitter ads](https://raw.githubusercontent.com/robonxt/CleanYourTwitter/master/CleanYourTwitter.txt) to your Chrome uBlock origin
 
