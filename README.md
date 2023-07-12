@@ -21,10 +21,11 @@ chrome://flags/#username-first-flow
 - [Tempus: Timed Youtube Comments](https://chrome.google.com/webstore/detail/tempus/bpdhbpeecmmglmkjfmigehaebpndmceh)
 - [Bypass Paywalls Chrome Clean](https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean)
 - [Get Off Those Sites](https://github.com/grimsteel/get-off-those-sites): You predict the expected time on your site and it'll turn it black and white after that time, and also log the actual amount of time that you spend on that site.
-- [Privacy.com](https://app.privacy.com/join/QCDWQ): Virtual prepaid credit cards with max spend; useful for subscriptions.
+- [Privacy.com](https://app.privacy.com/join/QCDWQ): Make one-time burner credit cards with limits. I use this for automatically billing subscriptions, or sketchy sites that need credit cards to use them, since then I don't need to remember to cancel.
 - Tactiq: Takes automatic transcripts of any Google Meet or Zoom meeting in browser along with AI actionables and summaries.
 - ShareGPT: Share your ChatGPT conversations.
-- Bitwarden Password Manager
+- [Mullvad VPN](mullvad.net): Cheap at $5/mo, and the VPN that all my privacy-conscious security expert friends use. They are committed to not logging data, and have [successfully resisted search warrants in the past](https://mullvad.net/en/blog/2023/4/20/mullvad-vpn-was-subject-to-a-search-warrant-customer-data-not-compromised/).
+- [Bitwarden](https://bitwarden.com/): Free and open-source password manager. Has pretty good UI and integrations, and one-click switching from any other password manager. Has never been hacked.
 
 # Settings
 ```
