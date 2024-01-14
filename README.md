@@ -12,8 +12,11 @@ chrome://flags/#username-first-flow
 - Brew for packages
 - Rectangle for window snapping
 - Itsycal for a calendar dropdown in menu bar (add to startup https://macpaw.com/how-to/remove-startup-items-in-osx)
+- [Cursor IDE](https://cursor.so): AI-enabled editor with full context of your codebased and docs; made me 2x faster than using ChatGPT. One-click import all your existing vscode settings.
+- superwhisper: Trying it out with cursor.so for faster coding. Unclear if useful.
 - `brew install --cask discord slack remnote messenger vlc karabiner-elements transmission protonvpn mathpix-snipping-tool rectangle copyclip itsycal twitch-studio sonic-pi sreamlabs-obs trash`
   - `trash` lets you rm to Mac trash via command line
+  - MathPix: One click screenshot OCR including extremely good LaTeX support. 
 - `brew install wget youtube-dl ffmpeg fd`
 
 # Chrome Extensions
@@ -26,6 +29,7 @@ chrome://flags/#username-first-flow
 - ShareGPT: Share your ChatGPT conversations.
 - [Mullvad VPN](mullvad.net): Cheap at $5/mo, and the VPN that all my privacy-conscious security expert friends use. They are committed to not logging data, and have [successfully resisted search warrants in the past](https://mullvad.net/en/blog/2023/4/20/mullvad-vpn-was-subject-to-a-search-warrant-customer-data-not-compromised/).
 - [Bitwarden](https://bitwarden.com/): Free and open-source password manager. Has pretty good UI and integrations, and one-click switching from any other password manager. Has never been hacked.
+= [iBar](https://apps.apple.com/us/app/ibar-menubar-icon-control-tool/id6443843900): Collapse extra icons in the menu bar into a sub-menu.
 
 # Settings
 ```
