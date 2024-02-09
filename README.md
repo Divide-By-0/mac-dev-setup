@@ -29,7 +29,7 @@ chrome://flags/#username-first-flow
 - ShareGPT: Share your ChatGPT conversations.
 - [Mullvad VPN](mullvad.net): Cheap at $5/mo, and the VPN that all my privacy-conscious security expert friends use. They are committed to not logging data, and have [successfully resisted search warrants in the past](https://mullvad.net/en/blog/2023/4/20/mullvad-vpn-was-subject-to-a-search-warrant-customer-data-not-compromised/).
 - [Bitwarden](https://bitwarden.com/): Free and open-source password manager. Has pretty good UI and integrations, and one-click switching from any other password manager. Has never been hacked.
-= [iBar](https://apps.apple.com/us/app/ibar-menubar-icon-control-tool/id6443843900): Collapse extra icons in the menu bar into a sub-menu.
+- [iBar](https://apps.apple.com/us/app/ibar-menubar-icon-control-tool/id6443843900): Collapse extra icons in the menu bar into a sub-menu.
 
 # Settings
 ```
