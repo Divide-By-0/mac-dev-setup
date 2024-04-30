@@ -2,7 +2,10 @@
 Things I setup on my Mac laptop -- it should work on Ubuntu as well. Insipred by https://github.com/utkuufuk/ubuntu-on-steroids. </br>
 If you want the vim-specific version, try https://github.com/Divide-By-0/dotfiles.
 
-# Enable these flags to name windows, fill PDF forms, and save passwords with two phase login
+# Chrome Flags
+
+Enable these flags to name windows, fill PDF forms, and save passwords with two phase login
+
 chrome://flags/#window-naming </br>
 chrome://flags/#pdf-form-save </br>
 chrome://flags/#username-first-flow
@@ -11,9 +14,12 @@ chrome://flags/#username-first-flow
 - Copyclip 1 for clipboard history
 - Brew for packages
 - Rectangle for window snapping
-- Itsycal for a calendar dropdown in menu bar (add to startup https://macpaw.com/how-to/remove-startup-items-in-osx)
+- Itsycal for a calendar dropdown in menu bar (Need to [setup to automatically open on login](https://macpaw.com/how-to/remove-startup-items-in-osx))
 - [Cursor IDE](https://cursor.so): AI-enabled editor with full context of your codebased and docs; made me 2x faster than using ChatGPT. One-click import all your existing vscode settings.
-- superwhisper: Trying it out with cursor.so for faster coding. Unclear if useful.
+- [iBar](https://apps.apple.com/us/app/ibar-menubar-icon-control-tool/id6443843900): Collapse extra icons in the menu bar into a sub-menu. (Need to [setup to automatically open on login](https://macpaw.com/how-to/remove-startup-items-in-osx))
+- superwhisper: Was recommended under the context of using it with cursor.so for faster coding. Theoretically useful for faster voice transcription, but it's hard to consistently include new keyboard shortcuts in my flow so hasn't been as useful as I would have liked.
+- [Backtrack](https://apps.apple.com/gb/app/backtrack-record-the-past/id1477089520?mt=12): Record the past hour of audio and screen recording of your laptop.
+- [Mullvad VPN](mullvad.net): Cheap at $5/mo, and the VPN that all my privacy-conscious security expert friends use. They are committed to not logging data, and have [successfully resisted search warrants in the past](https://mullvad.net/en/blog/2023/4/20/mullvad-vpn-was-subject-to-a-search-warrant-customer-data-not-compromised/).
 - `brew install --cask discord slack remnote messenger vlc karabiner-elements transmission protonvpn mathpix-snipping-tool rectangle copyclip itsycal twitch-studio sonic-pi sreamlabs-obs trash`
   - `trash` lets you rm to Mac trash via command line
   - MathPix: One click screenshot OCR including extremely good LaTeX support. 
@@ -27,9 +33,7 @@ chrome://flags/#username-first-flow
 - [Privacy.com](https://app.privacy.com/join/QCDWQ): Make one-time burner credit cards with limits. I use this for automatically billing subscriptions, or sketchy sites that need credit cards to use them, since then I don't need to remember to cancel.
 - Tactiq: Takes automatic transcripts of any Google Meet or Zoom meeting in browser along with AI actionables and summaries.
 - ShareGPT: Share your ChatGPT conversations.
-- [Mullvad VPN](mullvad.net): Cheap at $5/mo, and the VPN that all my privacy-conscious security expert friends use. They are committed to not logging data, and have [successfully resisted search warrants in the past](https://mullvad.net/en/blog/2023/4/20/mullvad-vpn-was-subject-to-a-search-warrant-customer-data-not-compromised/).
 - [Bitwarden](https://bitwarden.com/): Free and open-source password manager. Has pretty good UI and integrations, and one-click switching from any other password manager. Has never been hacked.
-- [iBar](https://apps.apple.com/us/app/ibar-menubar-icon-control-tool/id6443843900): Collapse extra icons in the menu bar into a sub-menu.
 
 # Settings
 ```
